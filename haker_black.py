@@ -82,9 +82,9 @@ def text():
         print("|  |       |  |      |  |    \  \   ^     | ---\ \   /  __  \   / /-\ \              ")
         print("|  |       |  |      |  |     \  \        | |  | |   | |  | |   \___  |        ")
         print("|  |       |  |      |  |      \  \       | |--| |   | |__| |   ^___| |              ")
-        print(" --         --        --         --       \_____/    \-----/    \-----/               ")
-        print("hkdog")
-        print('welcome by midikafeijuren\033[0m') 
+        print(" --         --        --         --       \_____/    \-----/    \-----/             \033[0m'  ")
+        print("\033[1;31;1mhkdog v1.0.1")
+        print('welcome by midi\033[0m') 
 
 
 
@@ -100,18 +100,29 @@ def main():
     while life:
         dm = input("\033[1;31;1m hkdog>>> \033[0m")
         if dm == "help" or "-h" or "-help" or "h":
-            print("")
-        if dm == "hkdog -zb":
+            	print("版本号:v1.0.0 装bi攻击两用版")
+		print("code                   meaning")
+		print("-----------------------------------------")
+		print("版本号                  查询版本")
+		print("hkdog -zb              装bi    ")
+        	print("ddos                   ddos攻击[真实有效]")
+		print("")
+	if dm == "版本号":
+		print("装bi攻击两用版")
+	
+	if dm == "hkdog -zb":
             while True:
                   
                 first2_ = str(random.randint(000,999))
                 first_ = str(random.randint(000,999))
                 first3_ = str(random.randint(000,999))
-                end_first_ = first_ + "." + first2_ + "." + first3_
+		first4_ = str(random.randint(000,999))
+                end_first_ = first_ + "." + first2_ + "." + first3_ + "." + first4_
                 first2 = str(random.randint(000,999))
                 first = str(random.randint(000,999))
                 first3 = str(random.randint(000,999))
-                end_first = first + "." + first2 + "." + first3
+                first4 = str(random.randint(000,999))
+		end_first = first + "." + first2 + "." + first3 + "." + first4
                 print(f"hak spend {end_first_} ==>>> {end_first}")
                 time.sleep(0.05)
         if dm == "ddos":
